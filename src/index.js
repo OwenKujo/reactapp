@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Product from './product';
+import Book from './Book';
 
 const router = createBrowserRouter([
   {
@@ -17,9 +18,13 @@ const router = createBrowserRouter([
   {
     path:"/product",
     element: <Product/>
+  },
+  {
+    path:'/book',
+    element: <Book/>
   }
 ]);
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RouterProvider router={router} />
 );
